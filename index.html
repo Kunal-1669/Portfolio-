@@ -1,201 +1,204 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <title>Responsive Portfolio Website | Kunal Inglunkar</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Works</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div class="toggle">
-        <a href="#">
-          <ion-icon name="menu-outline"></ion-icon>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kunal Inglunkar | Data Scientist Portfolio</title>
+  <link href="/Users/kunal/Documents/portfolio/portfolio/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#works">Works</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="toggle">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <div class="section1">
+        <div class="head-img">
+          <img src="https://drive.google.com/uc?export=view&id=YOUR_IMAGE_ID" alt="Kunal Inglunkar" />
+        </div>
+        <div class="img-article">
+          <h1>Hi, I'm Kunal Inglunkar</h1>
+          <p class="about">
+            A data scientist with a strong background in developing machine learning and natural language processing solutions. With a Master's in Data Science from The George Washington University and a Bachelor's in Information Technology, I bring a diverse skill set in Python, deep learning, and cloud computing. I've successfully delivered projects like a RAG pipeline and a healthcare chatbot.
+          </p>
+          <a href="#" class="down"><button>Download Resume</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section2" id="blog">
+    <div class="container">
+      <div class="section-p">
+        <p class="r-p">Recent Posts</p>
+        <p class="v-p"><a href="#">View All</a></p>
+      </div>
+      <div class="recent-posts">
+        <div class="post-item">
+          <h1>Retrieval Augmented Generation (RAG) Pipeline</h1>
+          <p>April 2023 | Python, AWS</p>
+          <p class="post-article">
+            Developed a ready-to-deploy RAG pipeline for efficient document retrieval from large repositories, leveraging LangChain, Chroma vector database, and large language models like Llama and Mixtral.
+          </p>
+        </div>
+        <div class="post-item">
+          <h1>News Article Summarization</h1>
+          <p>November 2023 | AWS and Python</p>
+          <p class="post-article">
+            Developed a text summarization app using T5 transformer model and Streamlit utilizing AWS for model training. Fine-tuned T5 on news dataset for abstractive summarization.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section3" id="works">
+    <div class="container">
+      <div class="c-p">
+        <p>Featured Works</p>
+      </div>
+      <div class="f-w-item">
+        <div class="f-w-img">
+          <img src="/img/chatbot.gif" alt="Healthcare Chatbot" />
+        </div>
+        <div class="f-w-text">
+          <h1><a href="#">Healthcare Chatbot</a></h1>
+          <div class="f-w-text-p">
+            <p><span>November 2023</span></p>
+            <p>Python</p>
+          </div>
+          <p class="f-w-article">
+            Developed a healthcare chatbot, achieving an 88% accuracy rate through advanced NLP and deep learning techniques. Processed over 100,000 medical conversations to optimize data pipelines and inform diagnosis recommendations.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="f-w-item">
+        <div class="f-w-img">
+          <img src="/img/tcs.jpg" alt="TCS Project" />
+        </div>
+        <div class="f-w-text">
+          <h1><a href="#">Validation Engineer at TCS</a></h1>
+          <div class="f-w-text-p">
+            <p><span>Jan - Aug 2022</span></p>
+            <p>Testing</p>
+          </div>
+          <p class="f-w-article">
+            Developed and executed comprehensive test cases to validate HVAC system functionality using CANoe for an agile development team. Identified software defects and logged detailed bug reports.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section4">
+    <div class="container">
+      <div class="c-p">
+        <p>Technical Projects</p>
+      </div>
+      <div class="tech-project-container">
+        <div class="tech-project-item">
+          <div class="tech-project-text">
+            <h1>Salary Prediction for Data Science Jobs</h1>
+            <p>November 2022 | Python</p>
+            <p class="tech-project-article">
+              Estimated salaries for various data science roles across the USA based on multiple factors.
+            </p>
+          </div>
+        </div>
+        <div class="tech-project-item">
+          <div class="tech-project-text">
+            <h1>Telecom Churn Prediction</h1>
+            <p>November 2022 | R</p>
+            <p class="tech-project-article">
+              Determined factors affecting churn rate for a telecom company and built models to predict customer retention.
+            </p>
+          </div>
+        </div>
+        <div class="tech-project-item">
+          <div class="tech-project-text">
+            <h1>Credit Card Fraud Detection</h1>
+            <p>May 2021 | Python</p>
+            <p class="tech-project-article">
+              Built six different machine learning models to detect fraudulent credit card transactions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skill-item">
+        <span>Python</span>
+        <div class="progress-bar"><div style="width: 90%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span>Machine Learning</span>
+        <div class="progress-bar"><div style="width: 85%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span>Natural Language Processing</span>
+        <div class="progress-bar"><div style="width: 80%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span>Cloud Computing (AWS)</span>
+        <div class="progress-bar"><div style="width: 75%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span>Data Visualization</span>
+        <div class="progress-bar"><div style="width: 80%"></div></div>
+      </div>
+    </div>
+  </section>
+  
+  <footer id="contact">
+    <div class="container">
+      <div class="social-buttons">
+        <a href="https://github.com/Kunal-1669" target="_blank">
+          <img src="/img/github.svg" alt="GitHub" />
+        </a>
+        <a href="http://www.linkedin.com/in/kunal-inglunkar" target="_blank">
+          <img src="/img/linkedin.svg" alt="LinkedIn" />
+        </a>
+        <a href="https://twitter.com/KunalInglunkar" target="_blank">
+          <img src="/img/twitter.svg" alt="Twitter" />
+        </a>
+        <a href="mailto:kunal.inglunkar@gmail.com">
+          <img src="/img/mail.svg" alt="Email" />
         </a>
       </div>
-    </nav>
-    <header>
-      <div class="container">
-        <div class="section1">
-          <div class="head-img">
-            <img src="https://drive.google.com/uc?export=view&id=YOUR_IMAGE_ID" alt="Kunal Inglunkar" />
-          </div>
-          <div class="img-article">
-            <h1>Hi, I am Kunal Inglunkar</h1>
-            <p class="about">
-              I am a data scientist with a strong background in developing machine learning and natural language processing solutions. With a Master of Science in Data Science from The George Washington University and a Bachelor of Engineering in Information Technology, I have a diverse skill set in Python, deep learning, cloud computing, and more. I have successfully delivered multiple technical projects, including a Retrieval Augmented Generation pipeline and a healthcare chatbot.
-            </p>
-            <a href="#" class="down"><button>Download Resume</button></a>
-          </div>
-        </div>
-      </div>
-    </header>
+      <p>Copyright © 2024 All rights reserved<br><br><b>©Kunal Inglunkar</b></p>
+    </div>
+  </footer>
 
-    <section class="section2">
-      <div class="container">
-        <div class="section-p">
-          <p class="r-p">Recent posts</p>
-          <p class="v-p"><a href="">View All</a></p>
-        </div>
-        <div class="recent-posts">
-          <div class="post-item">
-            <h1>Retrieval Augmented Generation (RAG) Pipeline</h1>
-            <p>April 2023 | Python, AWS</p>
-            <p class="post-article">
-              Developed a ready-to-deploy RAG pipeline for efficient document retrieval from large repositories, leveraging LangChain, Chroma vector database, and large language models like Llama and Mixtral. Implemented multi-vector retrieval, contextual text chunking, and PDF parsing using libraries like Unstructured.io, enabling seamless information extraction from extensive document collections.
-            </p>
-          </div>
-          <div class="post-item">
-            <h1>News Article Summarization</h1>
-            <p>November 2023 | AWS and Python</p>
-            <p class="post-article">
-              Developed a text summarization app using T5 transformer model and Streamlit utilizing AWS for model training. Fine-tuned T5 on news dataset for abstractive summarization. Built an interactive web app for users to input text and receive concise summaries. Evaluated model performance using ROUGE metric against reference summaries.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="section3">
-      <div class="container">
-        <div class="c-p">
-          <p>Featured works</p>
-        </div>
-        <div class="f-w-item">
-          <div class="f-w-img">
-            <img src="/img/4.gif" alt="" />
-          </div>
-          <div class="f-w-text">
-            <h1><a href="#">
-              Healthcare Chatbot</h1></a>
-            <div class="f-w-text-p">
-              <p><span>November 2023</span></p>
-              <p>Python</p>
-            </div>
-            <p class="f-w-article">
-              Developed a healthcare chatbot, achieving an 88% accuracy rate through advanced natural language processing and deep learning techniques including word embeddings and LSTM models. Processed over 100,000 medical conversations to optimize data pipelines and inform diagnosis recommendations.
-            </p>
-          </div>
-          <section class="section4">
-            <div class="container">
-              <div class="c-p">
-                <p>Technical Projects</p>
-              </div>
-              <div class="tech-project-item">
-                <div class="tech-project-text">
-                  <h1>Salary Prediction for Data Science related jobs | Python</h1>
-                  <p>November 2022</p>
-                  <p class="tech-project-article">
-                    Estimated salary of various data science-related jobs across USA based on various factors and built model to predict salary of job role.
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <div class="tech-project-item">
-                <div class="tech-project-text">
-                  <h1>Telecom Churn Prediction | R</h1>
-                  <p>November 2022</p>
-                  <p class="tech-project-article">
-                    Determined which factors affect churn rate for telecom company and built various model to predict if customer will be retained.
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <div class="tech-project-item">
-                <div class="tech-project-text">
-                  <h1>Telecom Churn data visualization | Python, Google Cloud</h1>
-                  <p>May 2023</p>
-                  <p class="tech-project-article">
-                    Created dash app to help telecom churn company to help them to analyze data dynamically. <a href="https://dashapp-ginrvzouoa-nn.a.run.app/">Link</a>
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <div class="tech-project-item">
-                <div class="tech-project-text">
-                  <h1>Credit Card Fraud Detection System | Python</h1>
-                  <p>May 2021</p>
-                  <p class="tech-project-article">
-                    Determined fraudulent credit card transaction by building six different machine learning models and choosing best model based on ROC AUC score.
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <div class="tech-project-item">
-                <div class="tech-project-text">
-                  <h1>Soccer Team Management System | MySQL and Java</h1>
-                  <p>October 2019</p>
-                  <p class="tech-project-article">
-                    Built database management system for sports team by using MySQL on backend and Java on front end.
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <div class="tech-project-item">
-                <div class="tech-project-text">
-                  <h1>Pneumonia Detection | Python</h1>
-                  <p>May 2023</p>
-                  <p class="tech-project-article">
-                    This project tackles pneumonia classification using CNN. In addition, also experiment with threshold values.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-      
-        </div>
-        <hr />
-        <div class="f-w-item">
-          <div class="f-w-img">
-            <img src="/img/1.jpg" alt="" />
-          </div>
-          <div class="f-w-text">
-            <h1><a href="#">
-              Validation Engineer at TCS</h1></a>
-            <div class="f-w-text-p">
-              <p><span>Jan - Aug 2022</span></p>
-              <p>Testing</p>
-            </div>
-            <p class="f-w-article">
-              Developed and executed comprehensive test cases to validate HVAC system functionality using CANoe for an agile development team. Identified software defects and logged detailed bug reports enabling developers to expedite code fixes and meet release timelines.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    
-    <footer>
-      <div class="social-buttons">
-        <a href="https://github.com/Kunal-1669"><img src="/img/fb.svg" alt="" /></a>
-        <a href="http://www.linkedin.com/in/kunal-inglunkar"><img src="/img/insta.svg" alt="" /></a>
-        <a href="#"><img src="/img/twitter.svg" alt="" /></a>
-        <a href="#"><img src="/img/linkedin.svg" alt="" /></a>
-      </div>
-      <p>Copyright © 2024 All rights reserved <br><br> <b> ©Kunal Inglunkar </b></p>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-      $(function () {
-        $(".toggle").on("click", function () {
-          if ($(".nav-links").hasClass("active")) {
-            $(".nav-links").removeClass("active");
-            $(this).find("a").html('<ion-icon name="menu-outline"></ion-icon>');
-          } else {
-            $(".nav-links").addClass("active");
-            $(this).find("a").html('<ion-icon name="close-outline"></ion-icon>');
-          }
-        });
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $(".toggle").on("click", function () {
+        if ($(".nav-links").hasClass("active")) {
+          $(".nav-links").removeClass("active");
+          $(this).find("a").html('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>');
+        } else {
+          $(".nav-links").addClass("active");
+          $(this).find("a").html('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>');
+        }
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
 </html>
