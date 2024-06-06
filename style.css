@@ -319,3 +319,20 @@
       margin-left: 0;
     }
   }
+  /* Iframe Container Styles */
+.circle-container {
+    width: 300px; /* Adjust the size as needed */
+    height: 300px; /* Adjust the size as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: 2rem auto; /* Center the container and add some margin */
+  }
+  
+  .circle-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    transform: scale(1);
+    transform-origin: 0 0;
+  }
